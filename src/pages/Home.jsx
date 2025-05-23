@@ -191,6 +191,7 @@ export default function Home() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="flex-grow flex items-center justify-center"
           >
+            {/* Profile Image */}
             <img 
               src="../public/assets/photo.jpg" 
               alt="Hazarudeen N" 
