@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaDownload } from 'react-icons/fa';
+import Lottie from "lottie-react";
 
 export default function Home() {
   return (
@@ -183,19 +184,17 @@ export default function Home() {
               <Link to="/projects" className="text-white hover:text-gray-300 transition-colors duration-300 whitespace-nowrap">Projects</Link>
               <Link to="/contact" className="text-white hover:text-gray-300 transition-colors duration-300 whitespace-nowrap">Contact</Link>
             </div>
-          </motion.nav>
-
+          </motion.nav> 
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
+            transition={{ delay: 0.6, duration: 0.8 }}
             className="flex-grow flex items-center justify-center"
           >
-            {/* Profile Image */}
-            <img 
-              src="/assets/photo.jpg" 
-              alt="Hazarudeen N" 
-              className="w-90 h-96 object-cover rounded-full border-white shadow-lg"
+            <Lottie 
+              path="/assets/Working.json" // Use `path` instead of `animationData`
+              loop autoplay
+              className="w-[100%] max-w-lg"
             />
           </motion.div>
         </motion.div>
