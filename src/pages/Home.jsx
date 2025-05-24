@@ -151,7 +151,7 @@ export default function Home() {
               transition={{ delay: 1.1, duration: 0.5 }}
             >
               <motion.a
-                href="../public/assets/Hazar_Resume.pdf"
+                href="/assets/Hazar_Resume.pdf"
                 download
                 className="inline-flex items-center px-6 py-3 bg-gray-300 text-gray-800 rounded hover:shadow-lg transition-all duration-300"
                 whileHover={{ y: -5, transition: { type: "spring", stiffness: 1000, damping: 20, mass: 0.3 } }}
@@ -193,7 +193,7 @@ export default function Home() {
           >
             {/* Profile Image */}
             <img 
-              src="../public/assets/photo.jpg" 
+              src="/assets/photo.jpg" 
               alt="Hazarudeen N" 
               className="w-90 h-96 object-cover rounded-full border-white shadow-lg"
             />
